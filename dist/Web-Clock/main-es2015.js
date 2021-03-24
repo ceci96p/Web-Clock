@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/ceciliamesquita/Coding Projects/Web-Clock/src/main.ts */"zUnb");
+module.exports = __webpack_require__(/*! /Users/ceciliamesquita/Documents/GitHub/Web-Clock/src/main.ts */"zUnb");
 
 
 /***/ }),
@@ -241,4 +241,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=main-es2015.js.map

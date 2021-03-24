@@ -58482,4 +58482,4 @@ function innerSubscribe(result, innerSubscriber) {
 /***/ })
 
 }]);
-//# sourceMappingURL=vendor.js.map
+//# sourceMappingURL=vendor-es2015.js.map
