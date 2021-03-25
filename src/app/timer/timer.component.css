@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@500&display=swap');
+
+
+.container1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Karla', sans-serif;
+    color: black;
+    font-weight: 300;
+    font-size:8.0em;
+    line-height: 1.4;
+}
+
+h2{
+    font-family: 'Karla', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size:0.4em;
+    line-height: 1.4;
+}
+
+
+.block {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+
+    font-family: 'Karla', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 1.4;
+
+    
+}
+
+.text1, .text2 {
+    font-size: 3.4em;
+    height:90px; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.h1{
+    font-size: 3.4em;
+    height:90px; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.type1, .type2, .type3 {
+    height:90px; 
+    width: 90px;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+
+input.mat-input-element {
+    height:70px;
+    width: 70px;
+    background-color:white;
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+
+.mat-focused .placeholder {
+    color: transparent;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    margin: 10px;
+    font-family: 'Karla', sans-serif;
+    color: black;
+    font-size:1.8em;
+    width:35%;
+}
+.start{
+    background-color: #4CAF50;
+}
+
+.stop{
+    background-color: red;
+}
+
+
+
+

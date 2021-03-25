@@ -6,28 +6,23 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title>Clock</title>
+    <title>title</title>
   </head>
-
-  <body>
+  <body class="mat-app-background">
     <div class="page">
         <h1>Clock</h1>
-        <div class="container" >
-            <div class="clock type1">World Clock</div>
-            <div class="clock type2">Alarm</div>
-            <div class="clock type3">Stopwatch</div>
-            <div class="clock type4">Timer</div>
+        <div  class="menu-container" >
+            <button mat-raised-button class="clock type1">World Clock</button>
+            <button mat-raised-button class="clock type2">Alarm</button>
+            <button mat-raised-button class="clock type3">Stopwatch</button>
+            <button mat-raised-button class="clock type4" (click)="myFunction('hello')">Timer</button>
         </div>
         <div class="content">
-          <div class="box"> box</div>
+          <!-- <div class="box"> box</div> -->
+          <app-timer>
+          </app-timer>
         </div>
-      <!-- <div class="cabecera__bloque1"></div> -->
-      <!-- <div class="cabecera__bloque2"><h1>Clcck</h1></div> -->
     </div>
-    <!-- <article class="articulo">
-      <p>
-      </p>
-    </article> -->
   </body>
 </html>
 
