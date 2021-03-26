@@ -1,66 +1,67 @@
 <div class="timer">
 
-<div class="container1">
-    <span> {{displayHours}} </span>
-    <h2> :</h2>
-    <span> {{displayMinutes}} </span>
-    <h2> :</h2>
-    <span> {{displaySeconds}}</span>
+ 
+        <div [ngStyle]="{color:countDownColor}" class="container1">
+            <span> {{displayHours}} </span>
+            <span style="font-weight: 600;font-size:0.4em;">:</span>
+            <span> {{displayMinutes}} </span>
+            <span style="font-weight: 600;font-size:0.4em;">:</span>
+            <span> {{displaySeconds}}</span>
+        </div>
+
+
+    <div class="container2">
+
+        <div class="block type1">
+
+            <mat-form-field style="height:90px; width: 70px;">
+                <input matInput [(ngModel)]="hours" type="number" id="hours" name="hours" min="0" max="23"
+                    style="border: 2px solid black; text-align: center;font-size: 3.4em;">
+            </mat-form-field>
+            <mat-label for="minutes">Hours (0-23)</mat-label>
+
+        </div>
+
+        <h1 class="block text1">:</h1>
+
+        <div class="block type2">
+
+            <mat-form-field style="height:90px; width: 70px;">
+
+                <input matInput [(ngModel)]="minutes" type="number" id="minutes" name="minutes" min="0" max="59"
+                    style="border: 2px solid black; text-align: center; font-size: 3.4em;">
+            </mat-form-field>
+            <mat-label for="minutes">Minutes (0-59)</mat-label>
+
+        </div>
+
+        <h1 class="block text2">:</h1>
+
+        <div class="block type2">
+
+            <mat-form-field style="height:90px; width: 70px;">
+
+                <input matInput [(ngModel)]="seconds" type="number" id="seconds" name="seconds" min="0" max="59"
+                    style="border: 2px solid black; text-align: center; font-size: 3.4em;">
+            </mat-form-field>
+            <mat-label for="seconds">Seconds (0-59)</mat-label>
+
+        </div>
+
+    </div>
+
+    <div class="container3">
+        <button *ngIf="isStart" class="buttons start" mat-raised-button (click)="start(startString)">Start</button>
+        <button *ngIf="!isStart" class="buttons stop" mat-raised-button (click)="stop()">Stop</button>
+        <button class="buttons restart" mat-raised-button (click)="start(resetString)">Reset</button>
+        <br>
+        <div class="sound-container sound">
+            <a *ngIf="this.alarm" (click)="this.changeAlarm()">
+                <img src="assets/images/sound-icon.png" style="width:40px; height:40px;">
+            </a>
+            <a *ngIf="!this.alarm" (click)="this.changeAlarm()">
+                <img src="assets/images/no-sound-icon.png" style="width:40px; height:40px;">
+            </a>
+        </div>
+    </div>
 </div>
-
-
-
-<div class="container2" >
-
-<div class="block type1">
-
-<mat-form-field style="height:90px; width: 70px;">
-    <input matInput [(ngModel)]="hours" type="number" id="hours" name="hours" 
-    min="0" max="23" 
-    style="border: 2px solid black; text-align: center;font-size: 3.4em;">
-</mat-form-field>
-<mat-label for="minutes">Hours (0-23)</mat-label>
-
-</div>
-
-<h1 class="block text1">:</h1>
-
-<div class="block type2">
-
-<mat-form-field style="height:90px; width: 70px;">
-    
-    <input matInput [(ngModel)]="minutes" type="number" id="minutes" name="minutes" 
-    min="0" max="59" 
-    style="border: 2px solid black; text-align: center; font-size: 3.4em;">
-</mat-form-field>
-<mat-label for="minutes">Minutes (0-59)</mat-label>
-
-</div>
-
-<h1 class="block text2">:</h1>
-
-<div class="block type2">
-
-<mat-form-field style="height:90px; width: 70px;">
-   
-    <input matInput [(ngModel)]="seconds" type="number" id="seconds" name="seconds" 
-    min="0" max="59" 
-    style="border: 2px solid black; text-align: center; font-size: 3.4em;">
-</mat-form-field>
-<mat-label for="seconds">Seconds (0-59)</mat-label>
-
-</div>
-
-</div>
-
-<div class="container3">
-    <button class="buttons start" mat-raised-button (click)="start()" >Start</button>
-    <button class="buttons stop" mat-raised-button (click)="stop()">Stop</button>
-</div>
-
-</div>
-
-
-
-
-

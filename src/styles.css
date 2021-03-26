@@ -24,39 +24,17 @@ body{
   height:100vh;
 }
 
-
-h1{
-  text-align:center;
-  font-size: 4em;
-  font-family: 'Train One', cursive;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-/*.page {
-   min-height: 100%;
-
-}
-
-body {
-  min-height: 100%;
-  color: #333333;
-  font: 1.4em/1.8 "EB Garamond", serif;
-  margin: 0;
-  padding: 0;
-}*/
-
-@media (max-width: 37.5rem) {
+/* @media (max-width: 37.5rem) {
   body {
     font-size: 1.2em;
   }
+} */
+
+html, body { height: 100%; }
+
+@media screen and(max-width:720px)and (max-device-width:720px){
+  .clock{
+      font-size: 0.5em;
+  }
 }
 
-/*h1 {
-  line-height: 1;
-  font-weight: 600;
-  font-style: italic;
-  opacity: 0.75;
-}*/
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

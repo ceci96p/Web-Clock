@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@500&display=swap');
 
-.timer{
-    width:400px;
+:host {
+    width:80%;
 }
+
 .container1{
     display:flex;
     justify-content: center;
     align-items: center;
 
     font-family: 'Karla', sans-serif;
-    color: black;
     font-weight: 300;
     font-size:8.0em;
     line-height: 1.4;
 }
 
-h2{
-    font-family: 'Karla', sans-serif;
-    color: black;
-    font-weight: 600;
-    font-size:0.4em;
-    line-height: 1.4;
+
+.sound-container{
+    align-self: center;
+    /* width: 20%;
+    overflow: hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px; */
 }
 
 
@@ -91,18 +95,21 @@ input.mat-input-element {
     font-family: 'Karla', sans-serif;
     color: black;
     font-size:1.8em;
-    width:35%;
+    width:6em;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.80);
 }
 .start{
-    /* background-color: #4CAF50; */
     border: 2px solid #4CAF50;
 }
 
 .stop{
-    /* background-color: red; */
     border: 2px solid red;
 }
+
+.restart{
+    border: 2px solid rgb(41, 113, 247);
+}
+
 
 
 

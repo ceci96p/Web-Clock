@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@500&display=swap');
 
+
 h1{
   text-align:center;
   font-size: 6em;
@@ -37,12 +38,11 @@ h1{
   justify-content: center;
 
   height: 80%;
-  width: 15%;
+  width: 10em;
 
   margin: 6px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.80);
 }
-
 
 .type1{
   background-color: #002642;
@@ -70,7 +70,6 @@ h1{
   padding-top: 5vh;
   justify-content: center;
   height: calc(100vh - 265px);
- 
 }
 
 .box{
@@ -81,3 +80,9 @@ h1{
   width: 80%;
 }
 
+
+@media screen and (max-width:900px) and (max-device-width:900px){
+  .clock{
+      font-size: 100px;
+  }
+}
