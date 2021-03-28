@@ -18,6 +18,7 @@
 
 .sound-container{
     align-self: center;
+    justify-content: center;
     /* width: 20%;
     overflow: hidden;
     display:flex;
@@ -31,7 +32,7 @@
 .block {
     display: flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
 
@@ -49,6 +50,9 @@
     height:90px; 
     padding-top: 0px;
     padding-bottom: 0px;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .h1{
@@ -110,6 +114,12 @@ input.mat-input-element {
     border: 2px solid rgb(41, 113, 247);
 }
 
+@media screen and (max-width:720px){
+    .container1 span{
+        font-size: 0.7em;
+        
+    }
+  }
 
 
 

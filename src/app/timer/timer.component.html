@@ -2,12 +2,27 @@
 
  
         <div [ngStyle]="{color:countDownColor}" class="container1">
+
+            <div display="invisible" style="width:60px; height:40px; padding-right: 20px;" >
+            </div>
+
             <span> {{displayHours}} </span>
             <span style="font-weight: 600;font-size:0.4em;">:</span>
             <span> {{displayMinutes}} </span>
             <span style="font-weight: 600;font-size:0.4em;">:</span>
             <span> {{displaySeconds}}</span>
+
+            <div class="sound-container sound">
+                <a *ngIf="this.alarm" (click)="this.changeAlarm()">
+                    <img src="assets/images/sound-icon.png" style="width:60px; height:45px; padding-left: 20px;">
+                </a>
+                <a *ngIf="!this.alarm" (click)="this.changeAlarm()">
+                    <img src="assets/images/no-sound-icon.png" style="width:60px; height:45px; padding-left: 20px;">
+                </a>
+            </div>
         </div>
+
+        
 
 
     <div class="container2">
@@ -49,19 +64,10 @@
         </div>
 
     </div>
-
+<br>
     <div class="container3">
         <button *ngIf="isStart" class="buttons start" mat-raised-button (click)="start(startString)">Start</button>
         <button *ngIf="!isStart" class="buttons stop" mat-raised-button (click)="stop()">Stop</button>
         <button class="buttons restart" mat-raised-button (click)="start(resetString)">Reset</button>
-        <br>
-        <div class="sound-container sound">
-            <a *ngIf="this.alarm" (click)="this.changeAlarm()">
-                <img src="assets/images/sound-icon.png" style="width:40px; height:40px;">
-            </a>
-            <a *ngIf="!this.alarm" (click)="this.changeAlarm()">
-                <img src="assets/images/no-sound-icon.png" style="width:40px; height:40px;">
-            </a>
-        </div>
     </div>
 </div>
