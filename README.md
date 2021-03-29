@@ -8,6 +8,18 @@ Web responsive Angular 11 application that implements multiple clock functionali
 
 This project uses Angular 11, Angular Material, Typescript, Node.js and Npm.
 
+## Functionalities currently implemented
+
+* Timer
+
+## Functionalities to be implemented
+
+* Stopwatch
+
+* Alarm
+
+* World Clock
+
 ## How To Run 
 
 ### Run on web
@@ -23,4 +35,3 @@ Note : You must have nodeJS and angular-cli installed into your computer.
 2. Run "ng serve" inside the 'Web-Clock-main' folder.
 
 3. Open a web browser and go to http://localhost:4200/.
-
