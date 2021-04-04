@@ -1,0 +1,26 @@
+:host {
+    width:80%;
+}
+
+.container1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Sen', sans-serif;
+    font-weight: 400;
+    font-size:7.0em;
+    line-height: 1.4;
+}
+
+.container3{
+    width: 40vw;
+    height: 28vh;
+    border: 1px solid black;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}

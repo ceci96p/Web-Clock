@@ -1,0 +1,36 @@
+<div class="stopwatch">
+
+ 
+    <div  class="container1">
+
+        <span> {{displayHours}} </span>
+        <span style="font-weight: 600;font-size:0.4em;">:</span>
+        <span> {{displayMinutes}} </span>
+        <span style="font-weight: 600;font-size:0.4em;">:</span>
+        <span> {{displaySeconds}}</span>
+
+       
+    </div>
+
+    
+<div class="container2">
+
+    <button class="buttons lap" mat-raised-button (click)="lap()">LAP</button>
+    <button class="buttons start" mat-raised-button (click)="execute(startString)" >START</button>
+    <button class="buttons stop" mat-raised-button (click)="stop()">STOP</button>
+    <button class="buttons stop" mat-raised-button (click)="reset()">RESET</button>
+</div>
+
+
+</div>
+<br>
+
+<div class="container3">
+    <tr *ngFor="let lap of lapArray">
+        <div class="wrapper">
+            <div class="title">{{lap.title}}</div>
+            <div class="time"> {{lap.time}}</div>
+        </div>
+    </tr>
+    
+</div>

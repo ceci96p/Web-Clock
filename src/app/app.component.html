@@ -11,21 +11,19 @@
   </head>
   <body class="mat-app-background">
     <div class="page">
-        <h1>Clock</h1>
+        <h1>CLOCK</h1>
         <div  class="menu-container" >
-            <button mat-raised-button class="clock type1">World Clock</button>
-            <button mat-raised-button class="clock type2">Alarm</button>
-            <button mat-raised-button class="clock type3">Stopwatch</button>
-            <button mat-raised-button class="clock type4" (click)="myFunction('hello')">Timer</button>
+            <button mat-raised-button class="clock type1">WORLD CLOCK</button>
+            <button mat-raised-button class="clock type2">ALARM</button>
+            <button [routerLink]="'/stopwatch'" mat-raised-button class="clock type3">STOPWATCH</button>
+            <button [routerLink]="'/timer'" mat-raised-button class="clock type4">TIMER </button>
         </div>
         <div class="content">
-          <!-- <div class="box"> box</div> -->
-          <app-timer>
-          </app-timer>
+          <router-outlet></router-outlet>
         </div>
     </div>
   </body>
 </html>
 
 
-<router-outlet></router-outlet>
+

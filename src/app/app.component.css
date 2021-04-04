@@ -1,24 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@500;700&display=swap');
 
 
 h1{
   text-align:center;
   font-size: 6em;
-  font-family: 'Montserrat', sans-serif;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .page{
   height: 100vh;
-  background-color: #f1eaea;
+  /* background-color: #f1eaea; */
+  background-color: white;
 }
 
 .menu-container{
-  height: 100px;
+  height: 120px;
   display: flex;
   border: 0px solid black;
-  background-color: #f1eaea;
+  /* background-color: #f1eaea; */
+  background-color: white;
   flex-direction: row;
 
   align-items: center;
@@ -29,7 +32,7 @@ h1{
   display: flex;
   text-align: center;
   font-family: 'Karla', sans-serif;
-  color: white;
+  color: black;
   font-weight: 600;
   font-size: 1.6em;
   line-height: 1.4;
@@ -40,27 +43,35 @@ h1{
   height: 80%;
   width: 10em;
 
-  margin: 6px;
+  margin: 25px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.80);
+
+  border-style: solid;
+  border-width: 5px;
+
 }
 
 .type1{
-  background-color: #002642;
+  /* background-color: #002642; */
+  border-color:#002642;
 
 }
 
 .type2{
-  background-color: #840032;
+  /* background-color: #840032; */
+  border-color:#840032;
 
 }
 
 .type3{
-  background-color: #E59500;
+  /* background-color: #E59500; */
+  border-color:#E59500;
 
 }
 
 .type4{
-  background-color: #2A9D8F;
+  /* background-color: #2A9D8F; */
+  border-color:#2A9D8F; 
 }
 
 .content{
@@ -69,7 +80,7 @@ h1{
   align-items: flex-start;
   padding-top: 5vh;
   justify-content: center;
-  height: calc(100vh - 265px);
+  height: calc(90vh - 265px);
 }
 
 .box{

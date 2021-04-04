@@ -79,7 +79,6 @@ export class TimerComponent implements OnInit {
 
     if (!(this.displayHours == "00" && this.displayMinutes == "00" && this.displaySeconds == "00") && command == "start"){
       this.timeLeft = new Date (this.timeLeft.setHours(Number(this.displayHours), Number(this.displayMinutes), Number(this.displaySeconds)));
-      console.log("here");
       }else{
       this.timeLeft = new Date(this.timeLeft.setHours(this.hours, this.minutes, this.seconds));
       }

@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TimerComponent } from './timer/timer.component';
+import { StopwatchComponent } from './stopwatch/stopwatch.component';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatRippleModule} from '@angular/material/core';
@@ -13,10 +15,14 @@ import {MatInputModule } from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    TimerComponent
+    TimerComponent,
+    StopwatchComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -27,6 +33,9 @@ import {FormsModule} from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    AppRoutingModule,
+  ],
+  exports: [RouterModule,TimerComponent,StopwatchComponent,
   ],
     
   providers: [],
