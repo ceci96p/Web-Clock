@@ -12,9 +12,9 @@ This project uses Angular 11, Angular Material, Typescript, Node.js and Npm.
 
 * Timer
 
-## Functionalities to be implemented
-
 * Stopwatch
+
+## Functionalities to be implemented
 
 * Alarm
 
